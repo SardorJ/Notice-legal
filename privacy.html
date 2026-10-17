@@ -6,30 +6,37 @@
 </head>
 <body style="max-width: 700px; margin: 40px auto; font-family: -apple-system, sans-serif; line-height: 1.6; padding: 0 20px;">
   <h1>Privacy Policy for Notice</h1>
-  <p><em>Last updated: 14 Aug 2026</em></p>
+  <p><em>Last updated: 17 Oct 2026</em></p>
 
-  <p>Notice is committed to protecting your privacy. This policy explains what data the app does — and does not — collect.</p>
+  <p>Notice — Mindful Screen Time is committed to protecting your privacy. This policy covers the iOS and Android apps and explains what data Notice does — and does not — collect. On both platforms, Notice works on your device.</p>
 
   <h2>What We Collect</h2>
-  <p>Notice does not collect, store, or transmit any personal data. The app works entirely on your device.</p>
+  <p>Notice does not collect personal data, and it does not send data to us or to anyone else. What the app keeps stays on your device.</p>
   <ul>
-    <li>App tracking automations are set up and run through Apple's own Shortcuts app, on your device. Notice does not see, log, or store which apps you choose to track.</li>
-    <li>Timers, notifications, and alerts (via Apple's AlarmKit) run locally on your device.</li>
-    <li>Widgets and Dynamic Island displays run locally on your device.</li>
     <li>Notice does not require an account, login, or any personal information to function.</li>
     <li>Notice does not use any third-party analytics or advertising SDKs.</li>
+    <li>Uninstalling Notice deletes the data stored on that device.</li>
+    <li>On iPhone, app tracking automations are set up and run through Apple's own Shortcuts app, on your device. Notice does not see, log, or store which apps you choose to track.</li>
+    <li>On iPhone, timers, notifications, and alerts (via Apple's AlarmKit) run locally on your device.</li>
+    <li>On iPhone, widgets and Dynamic Island displays run locally on your device.</li>
+    <li>On Android (package <code>app.notice</code>), Notice uses Android's Usage Access permission (<code>PACKAGE_USAGE_STATS</code>, through <code>UsageStatsManager</code>) on your device. It uses that access only to see which app is in the foreground, so it can tell when an app you chose to track is opened or left and start or stop the timer. It does not keep a history of other apps, and those events stay on the device.</li>
+    <li>On Android, the list of apps you chose, timer sessions, and daily stats are stored only locally on the device (DataStore). Notice does not declare the <code>INTERNET</code> permission and does not make network calls, so the app never transmits, sells, or shares that data. To let you pick apps, Notice can see the names of apps that have a home-screen icon; only the ones you choose are saved. If Android backup is turned on for your phone, the operating system may include Notice's local files in your own device backup. Notice does not turn that system backup off.</li>
+    <li>On Android, Notice uses "Display over other apps" (<code>SYSTEM_ALERT_WINDOW</code>) to show the timer island or bubble.</li>
+    <li>On Android, a foreground service keeps the timer running, including after the phone restarts, and shows a persistent notification.</li>
+    <li>On Android, notifications and exact alarms are used for reminders and the hard limit. The hard-limit alarm can also appear full screen over the current app.</li>
   </ul>
 
   <h2>Crash Reports</h2>
-  <p>If the app crashes, Apple's built-in diagnostic tools may collect anonymous crash logs to help us fix bugs. This is handled entirely by Apple's operating system-level reporting, not by Notice directly. You can review or turn this off in your iPhone's Settings under Privacy & Security > Analytics & Improvements.</p>
+  <p>If the iOS app crashes, Apple's built-in diagnostic tools may collect anonymous crash logs to help us fix bugs. This is handled entirely by Apple's operating system-level reporting, not by Notice directly. You can review or turn this off in your iPhone's Settings under Privacy &amp; Security &gt; Analytics &amp; Improvements.</p>
+  <p>If the Android app crashes, Google Play and Android may collect anonymous crash diagnostics to help us fix bugs. This is handled entirely by Google's and Android's operating system-level reporting, not by Notice directly. Notice does not include its own crash-reporting SDK. You can review or turn this off in your phone's Settings under Privacy or Google &gt; Usage &amp; diagnostics, and in the Google Play Store under Settings &gt; General &gt; Usage &amp; diagnostics.</p>
 
   <h2>Children's Privacy</h2>
   <p>Notice does not knowingly collect any data from children, as it does not collect data from any user. The app is not directed at children under 13.</p>
 
   <h2>Changes to This Policy</h2>
-  <p>If Notice introduces new features that involve data collection (for example, optional future account-based features), this policy will be updated and the in-app App Privacy details will be revised accordingly.</p>
+  <p>If Notice introduces new features that involve data collection (for example, optional future account-based features), this policy will be updated and the in-app privacy details — including Apple's App Privacy information and Google Play's Data safety form — will be revised accordingly.</p>
 
   <h2>Contact</h2>
-  <p>If you have questions about this policy, contact us at: <a href="mailto:sardorjurayev09@gmail.com">sardorjurayev09@gmail.com</a></p>
+  <p>If you have questions about this policy, contact us at: <a href="mailto:Noticemindfullscreentime@gmail.com">Noticemindfullscreentime@gmail.com</a></p>
 </body>
 </html>
