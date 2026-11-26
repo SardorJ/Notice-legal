@@ -6,37 +6,47 @@
 </head>
 <body style="max-width: 700px; margin: 40px auto; font-family: -apple-system, sans-serif; line-height: 1.6; padding: 0 20px;">
   <h1>Privacy Policy for Notice</h1>
-  <p><em>Last updated: 17 Oct 2026</em></p>
+  <p><em>Last updated: November 26, 2026</em></p>
 
-  <p>Notice — Mindful Screen Time is committed to protecting your privacy. This policy covers the iOS and Android apps and explains what data Notice does — and does not — collect. On both platforms, Notice works on your device.</p>
+  <p>Notice — Mindful Screen Time is committed to protecting your privacy. This policy covers the iOS and Android apps and explains what data Notice does — and does not — keep. On both platforms, Notice works on your device. There is no account or login, no ads, and no analytics or tracking tools. Notice does not use iCloud or CloudKit, and the developer does not run a server for the app.</p>
 
   <h2>What We Collect</h2>
-  <p>Notice does not collect personal data, and it does not send data to us or to anyone else. What the app keeps stays on your device.</p>
+  <p>Notice does not ask for your name, email, or other contact details, and it does not send your data to us. What the app keeps stays on your device, except for one iPhone request to Apple, described under What leaves the device.</p>
   <ul>
     <li>Notice does not require an account, login, or any personal information to function.</li>
-    <li>Notice does not use any third-party analytics or advertising SDKs.</li>
-    <li>Uninstalling Notice deletes the data stored on that device.</li>
-    <li>On iPhone, app tracking automations are set up and run through Apple's own Shortcuts app, on your device. Notice does not see, log, or store which apps you choose to track.</li>
+    <li>Notice does not use any third-party analytics, advertising, or tracking SDKs. It does not follow you across other companies' apps or websites.</li>
+    <li>On iPhone, the apps you connect are linked through automations in Apple's Shortcuts app, on your device. Notice does not use Apple's Family Controls or Screen Time API.</li>
+    <li>On iPhone, Notice stores, only on the device, the list of connected apps (bundle IDs and app names), a visit log (bundle ID, app name, and timestamps) used for the stats in the app, and cached app icon images. The purpose is to show your connected apps, their icons, and those stats.</li>
     <li>On iPhone, timers, notifications, and alerts (via Apple's AlarmKit) run locally on your device.</li>
     <li>On iPhone, widgets and Dynamic Island displays run locally on your device.</li>
     <li>On Android (package <code>app.notice</code>), Notice uses Android's Usage Access permission (<code>PACKAGE_USAGE_STATS</code>, through <code>UsageStatsManager</code>) on your device. It uses that access only to see which app is in the foreground, so it can tell when an app you chose to track is opened or left and start or stop the timer. It does not keep a history of other apps, and those events stay on the device.</li>
-    <li>On Android, the list of apps you chose, timer sessions, and daily stats are stored only locally on the device (DataStore). Notice does not declare the <code>INTERNET</code> permission and does not make network calls, so the app never transmits, sells, or shares that data. To let you pick apps, Notice can see the names of apps that have a home-screen icon; only the ones you choose are saved. If Android backup is turned on for your phone, the operating system may include Notice's local files in your own device backup. Notice does not turn that system backup off.</li>
+    <li>On Android, the list of apps you chose, timer sessions, and daily stats are stored only locally on the device (DataStore), so the app can run timers and show your stats. To let you pick apps, Notice can see the names of apps that have a home-screen icon; only the ones you choose are saved.</li>
     <li>On Android, Notice uses "Display over other apps" (<code>SYSTEM_ALERT_WINDOW</code>) to show the timer island or bubble.</li>
     <li>On Android, a foreground service keeps the timer running, including after the phone restarts, and shows a persistent notification.</li>
     <li>On Android, notifications and exact alarms are used for reminders and the hard limit. The hard-limit alarm can also appear full screen over the current app.</li>
   </ul>
 
+  <h2>Where It Is Stored</h2>
+  <p>On iPhone, the list of connected apps, the visit log, and the cached icons are kept in the app's local storage and in an app group shared with Notice's widget. On Android, the chosen apps, timer sessions, and daily stats are kept in the app's local DataStore. Notice does not copy this data to a server, to iCloud, or to CloudKit.</p>
+  <p>The same data is included in your normal device backup, like any other app's data, and only according to your own settings: an iCloud or computer backup on iPhone, and Android backup if that is turned on for your phone. Notice does not turn that backup off, and it does not use backup as its own sync. Deleting the app deletes the data on the device.</p>
+
+  <h2>What Leaves the Device</h2>
+  <p>On iPhone, the only network request Notice makes is to show app icons. It asks Apple's public iTunes Search/Lookup API (<code>itunes.apple.com</code>) for that app's App Store artwork. The request sends the selected app's bundle ID or app name, plus a country code, to Apple. Apple's privacy policy applies to that request: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>. Nothing else is sent by the app. The developer never receives the request or Apple's reply.</p>
+  <p>On Android (package <code>app.notice</code>), Notice does not declare the <code>INTERNET</code> permission and does not make network calls, so the app cannot send data off the phone. Notice does not transmit, sell, or share that data.</p>
+
   <h2>Crash Reports</h2>
-  <p>If the iOS app crashes, Apple's built-in diagnostic tools may collect anonymous crash logs to help us fix bugs. This is handled entirely by Apple's operating system-level reporting, not by Notice directly. You can review or turn this off in your iPhone's Settings under Privacy &amp; Security &gt; Analytics &amp; Improvements.</p>
-  <p>If the Android app crashes, Google Play and Android may collect anonymous crash diagnostics to help us fix bugs. This is handled entirely by Google's and Android's operating system-level reporting, not by Notice directly. Notice does not include its own crash-reporting SDK. You can review or turn this off in your phone's Settings under Privacy or Google &gt; Usage &amp; diagnostics, and in the Google Play Store under Settings &gt; General &gt; Usage &amp; diagnostics.</p>
+  <p>Notice does not include its own crash-reporting SDK, and it does not send crash logs to the developer. On iPhone, the only network request the app makes is the icon lookup above. On Android, the app has no internet permission, so it cannot send a crash report.</p>
+
+  <h2>Your Rights</h2>
+  <p>You can see your connected apps and stats in the app, and you can delete the stored data by deleting the app. If you are in the EEA, the UK, or another place with similar rules, you can ask to access, correct, or delete personal data, and you can object to processing or ask us to limit it. We do not receive the data stored on your device, so we cannot open or edit that copy ourselves. The only third party in this policy is Apple, for the iPhone icon lookup. Contact us and we will help with any request we can act on.</p>
 
   <h2>Children's Privacy</h2>
-  <p>Notice does not knowingly collect any data from children, as it does not collect data from any user. The app is not directed at children under 13.</p>
+  <p>Notice is not directed at children under 13. It does not ask for an account or contact details from any user, including children.</p>
 
   <h2>Changes to This Policy</h2>
   <p>If Notice introduces new features that involve data collection (for example, optional future account-based features), this policy will be updated and the in-app privacy details — including Apple's App Privacy information and Google Play's Data safety form — will be revised accordingly.</p>
 
   <h2>Contact</h2>
-  <p>If you have questions about this policy, contact us at: <a href="mailto:Noticemindfullscreentime@gmail.com">Noticemindfullscreentime@gmail.com</a></p>
+  <p>If you have questions about this policy, or you want to use the rights above, contact us at <a href="mailto:notice@noticeapp.app">notice@noticeapp.app</a>. Mail to that address arrives in the inbox <a href="mailto:Noticemindfullscreentime@gmail.com">Noticemindfullscreentime@gmail.com</a>.</p>
 </body>
 </html>
